@@ -18,7 +18,7 @@ public class pemilihan19 {
         double uas = tian.nextDouble();
         System.out.println("============================");
 
-        if (tugas > 100 || kuis > 100 || uts > 100 || uas > 100) {
+        if (tugas > 100 || kuis > 100 || uts > 100 || uas > 100 || tugas < 0 || kuis < 0 || uts < 0 || uas < 0) {
             System.out.println("========================");
             System.out.println("nilai tidak valid");
             System.out.println("========================");
