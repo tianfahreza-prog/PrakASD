@@ -11,7 +11,7 @@
 
 The solution is implemented in Pemilihan1.java, and below is screenshot of the result.
 
-![Screenshot](img/img1.png)
+![Screenshot](images/img1.png)
 
 **Brief explanaton:** There are 4 main step: 
 1. Input all grades
