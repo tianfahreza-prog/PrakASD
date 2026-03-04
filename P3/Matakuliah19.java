@@ -25,4 +25,12 @@ public class Matakuliah19 {
         System.out.println("Jam     : " + this.jumlahJam);
     }
 
+    public void cetakInfo() {
+        System.out.println("Kode         : " + this.kode);
+        System.out.println("Nama         : " + this.nama);
+        System.out.println("Sks          : " + this.sks);
+        System.out.println("Jumlah Jam   : " + this.jumlahJam);
+        System.out.println("--------------------------------------");
+    }
+
 }
