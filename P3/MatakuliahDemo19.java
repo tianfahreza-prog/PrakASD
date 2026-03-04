@@ -27,7 +27,7 @@ public class MatakuliahDemo19 {
         }
 
         for (int i = 0; i < 3; i++) {
-            System.out.println("Data Mahasiswa ke-" + (i + 1));
+            System.out.println("Data Matakuliah ke-" + (i + 1));
             System.out.println("Kode         : " + arrayOfMatakuliah[i].kode);
             System.out.println("Nama         : " + arrayOfMatakuliah[i].nama);
             System.out.println("Sks          : " + arrayOfMatakuliah[i].sks);
