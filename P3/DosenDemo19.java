@@ -36,6 +36,13 @@ public class DosenDemo19 {
             dosen.cetakInfo();
             i++;
         }
+
+        DataDosen19 dataDosen = new DataDosen19();
+        dataDosen.dataSemuaDosen(arrayOfDosen);
+        dataDosen.jumlahDosenPerJenisKelamin(arrayOfDosen);
+        dataDosen.rerataUsiaDosenPerJenisKelamin(arrayOfDosen);
+        dataDosen.infoDosenPalingTua(arrayOfDosen);
+        dataDosen.infoDosenPalingMuda(arrayOfDosen);
     }
     
 }
