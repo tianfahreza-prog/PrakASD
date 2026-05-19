@@ -29,6 +29,23 @@ public class SLLMain19 {
         sll.addFromKeyboard();
         sll.print();
 
+        System.out.println("=== PRAKTIKUM 2.2 ===");
+
+        System.out.print("data index 1 : ");
+        System.out.println();
+        sll.getData(1);
+        System.out.println();
+
+        System.out.println("data mahasiswa an Bimon berada pada index : " + sll.indexOf("bimon"));
+        System.out.println();
+
+        sll.removeFirst();
+        sll.removeLast();
+        sll.print();
+
+        sll.removeAt(0);
+        sll.print();
+
     
     }
 }
