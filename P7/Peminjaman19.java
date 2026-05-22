@@ -19,6 +19,10 @@ public class Peminjaman19 {
         if (lamaPinjam > batasPinjam) {
             terlambat = lamaPinjam - batasPinjam;
             denda = terlambat * 2000;
+
+            if (buku.tahunTerbit <= 2020) {
+                denda = denda / 2; // potongan 50%
+            }
         } else {
             terlambat = 0;
             denda = 0;
@@ -27,5 +31,10 @@ public class Peminjaman19 {
 
     public void tampilPeminjaman() {
         System.out.println(mhs.nama + " | " + buku.judul + " | Lama: " + lamaPinjam + " | Terlambat: " + terlambat + " | Denda: " + denda);
+    }
+
+    public void updateLamaPinjam(int lamaBaru) {
+        this.lamaPinjam = lamaBaru;
+        hitungDenda(); //hitung ulang
     }
 }

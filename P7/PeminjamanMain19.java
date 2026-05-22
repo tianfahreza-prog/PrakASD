@@ -2,6 +2,8 @@ package P7;
 
 import java.util.Scanner;
 
+import P1.pemilihan19;
+
 public class PeminjamanMain19 {
     
     // Insertion Sort DESC
@@ -104,6 +106,7 @@ public class PeminjamanMain19 {
             System.out.println("3. Tampilkan Peminjaman");
             System.out.println("4. Urutkan Berdasarkan Denda");
             System.out.println("5. Cari Berdasarkan NIM");
+            System.out.println("6. Update Data Pinjam");
             System.out.println("0. Keluar");
             System.out.print("Pilih: ");
             menu = sc.nextInt();
@@ -139,6 +142,32 @@ public class PeminjamanMain19 {
                     System.out.print("\nMasukkan NIM: ");
                     String cariNim = sc.nextLine();
                     cariBerdasarkanNIM(daftarPeminjaman, cariNim);
+                    break;
+                case 6: // update data pinjam
+                    System.out.print("\nMasukkan NIM: ");
+                    String nimUpdate = sc.nextLine();
+                    System.out.print("Masukkan lama pinjam baru: ");
+                    int lamaBaru = sc.nextInt();
+                    sc.nextLine();
+
+                    boolean ketemu = false;
+                    for (Peminjaman19 p : daftarPeminjaman) {
+                        if (p.mhs.nim.equals(nimUpdate)) {
+                            p.updateLamaPinjam(lamaBaru);
+                            ketemu = true;
+                        }
+                    }
+
+                    if (ketemu) {
+                        System.out.println("\nData setelah diperbarui:");
+                        for (Peminjaman19 p : daftarPeminjaman) {
+                            if (p.mhs.nim.equals(nimUpdate)) {
+                                p.tampilPeminjaman();
+                            }
+                        }
+                    } else {
+                        System.out.println("NIM tidak ditemukan.");
+                    }
                     break;
                 case 0:
                     System.out.println("Keluar dari program.");

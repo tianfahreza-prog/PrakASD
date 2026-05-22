@@ -4,6 +4,7 @@ public class Buku19 {
     String kodeBuku;
     String judul;
     int tahunTerbit;
+    double diskon;
 
     public Buku19(String kodeBuku, String judul, int tahunTerbit) {
         this.kodeBuku = kodeBuku;
@@ -14,4 +15,5 @@ public class Buku19 {
     public void tampilBuku() {
         System.out.println("Kode: " + kodeBuku + " | Judul: " + judul + " | Tahun: " + tahunTerbit);
     }
+    
 }
