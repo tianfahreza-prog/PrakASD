@@ -1,5 +1,6 @@
 package P15;
 
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.Stack;
 
@@ -11,7 +12,17 @@ public class LoopCollection {
         fruits.add("Watermelon");
         fruits.add("Leci");
         fruits.push("Salak");
+
+        fruits.set(fruits.size() - 1, "Strawberry");
         
+        fruits.add("Mango");
+        fruits.add("guava");
+        fruits.add("avocado");
+
+        System.out.println("Sebelum Sorting: " + fruits);
+        Collections.sort(fruits);
+        System.out.println("Setelah Sorting: " + fruits);
+
         for (String fruit : fruits) {
             System.out.printf("%s ", fruit);
         }
